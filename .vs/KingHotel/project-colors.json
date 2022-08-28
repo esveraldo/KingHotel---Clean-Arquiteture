@@ -1,0 +1,51 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5b300d19-6080-4954-aeb8-ae3419a36363": {
+      "ProjectGuid": "5b300d19-6080-4954-aeb8-ae3419a36363",
+      "DisplayName": "1-KingHotel.Api",
+      "ColorIndex": 0
+    },
+    "988e45d4-7217-4a32-8925-297f7f418ac6": {
+      "ProjectGuid": "988e45d4-7217-4a32-8925-297f7f418ac6",
+      "DisplayName": "KingHotel.Domain",
+      "ColorIndex": 1
+    },
+    "8d6c52ec-158f-4614-bd68-d38b44f131a3": {
+      "ProjectGuid": "8d6c52ec-158f-4614-bd68-d38b44f131a3",
+      "DisplayName": "KingHotel.Application",
+      "ColorIndex": 2
+    },
+    "26ded211-2afd-4f7d-ba49-96cf8b0ec255": {
+      "ProjectGuid": "26ded211-2afd-4f7d-ba49-96cf8b0ec255",
+      "DisplayName": "KingHotel.Data",
+      "ColorIndex": 3
+    },
+    "1c8caae2-52b9-446e-af06-aa582b7df723": {
+      "ProjectGuid": "1c8caae2-52b9-446e-af06-aa582b7df723",
+      "DisplayName": "KingHotel.Infraestucture",
+      "ColorIndex": 4
+    },
+    "c7353a29-92d5-4e70-b531-b2e1dba11387": {
+      "ProjectGuid": "c7353a29-92d5-4e70-b531-b2e1dba11387",
+      "DisplayName": "KingHotel.Tests",
+      "ColorIndex": 5
+    },
+    "b5b87705-1378-4b49-87a0-189da97e3453": {
+      "ProjectGuid": "b5b87705-1378-4b49-87a0-189da97e3453",
+      "DisplayName": "KingHotel.Infraestructure",
+      "ColorIndex": 6
+    },
+    "528dd5ca-d1eb-4e3d-ba75-c19caa37fc65": {
+      "ProjectGuid": "528dd5ca-d1eb-4e3d-ba75-c19caa37fc65",
+      "DisplayName": "KingHotel.Api",
+      "ColorIndex": 7
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 8
+}

@@ -1,0 +1,12 @@
+C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Domain\bin\Debug\net6.0\KingHotel.Domain.deps.json
+C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Domain\bin\Debug\net6.0\KingHotel.Domain.dll
+C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Domain\bin\Debug\net6.0\ref\KingHotel.Domain.dll
+C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Domain\bin\Debug\net6.0\KingHotel.Domain.pdb
+C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Domain\obj\Debug\net6.0\KingHotel.Domain.csproj.AssemblyReference.cache
+C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Domain\obj\Debug\net6.0\KingHotel.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Domain\obj\Debug\net6.0\KingHotel.Domain.AssemblyInfoInputs.cache
+C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Domain\obj\Debug\net6.0\KingHotel.Domain.AssemblyInfo.cs
+C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Domain\obj\Debug\net6.0\KingHotel.Domain.csproj.CoreCompileInputs.cache
+C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Domain\obj\Debug\net6.0\KingHotel.Domain.dll
+C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Domain\obj\Debug\net6.0\ref\KingHotel.Domain.dll
+C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Domain\obj\Debug\net6.0\KingHotel.Domain.pdb

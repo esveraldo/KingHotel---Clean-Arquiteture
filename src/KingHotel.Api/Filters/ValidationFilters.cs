@@ -1,0 +1,23 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
+
+namespace KingHotel.Api.Filters
+{
+    public class ValidationFilters : IActionFilter
+    {
+        public void OnActionExecuted(ActionExecutedContext context)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnActionExecuting(ActionExecutingContext context)
+        {
+            var messages = context.ModelState
+                    .SelectMany(e => e.Value.Errors)
+                    .Select(e => e.ErrorMessage)
+                    .ToList();
+
+            context.Result = new BadRequestObjectResult(messages);
+        }
+    }
+}

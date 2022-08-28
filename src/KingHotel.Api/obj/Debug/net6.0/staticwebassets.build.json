@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "PkrbLUqAAnehK6jkUbRbBe0D3v8Nak5JETMhosIUXPw=",
+  "Source": "KingHotel.Api",
+  "BasePath": "_content/KingHotel.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
