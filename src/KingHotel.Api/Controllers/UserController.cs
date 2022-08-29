@@ -1,6 +1,7 @@
 ﻿using KingHotel.Application.Commands.User;
 using KingHotel.Application.Queries.Users;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace KingHotel.Api.Controllers
@@ -18,6 +19,7 @@ namespace KingHotel.Api.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "admin, operator")]
         public async Task<ActionResult> GetAll()
         {
             try
@@ -36,6 +38,7 @@ namespace KingHotel.Api.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize(Roles = "admin")]
         public async Task<ActionResult> GetById(Guid id)
         {
             try
@@ -53,6 +56,7 @@ namespace KingHotel.Api.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<ActionResult> Post([FromBody] CreateUserCommand createUserCommand)
         {
             try
@@ -68,6 +72,7 @@ namespace KingHotel.Api.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = "admin")]
         public async Task<ActionResult> Put([FromBody] UpdateUserCommand updateUserCommand)
         {
             try
@@ -85,6 +90,7 @@ namespace KingHotel.Api.Controllers
         }
 
         [HttpDelete]
+        [Authorize(Roles = "admin")]
         public async Task<ActionResult> Remove(Guid id)
         {
             try
@@ -103,6 +109,7 @@ namespace KingHotel.Api.Controllers
         }
 
         [HttpPut("login")]
+        [AllowAnonymous]
         public async Task<ActionResult> Login([FromBody] LoginUserCommand command)
         {
             try

@@ -18,8 +18,10 @@ builder.Services.AddMvc();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSecuritySwagger();
 builder.Services.AddRepository();
 builder.Services.AddServices();
+builder.Services.AddSecurity(builder.Configuration);
 builder.Services.AddContext(builder.Configuration);
 
 builder.Services.AddMediatR(typeof(GetAllUsersQueryHandler));
@@ -35,6 +37,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
