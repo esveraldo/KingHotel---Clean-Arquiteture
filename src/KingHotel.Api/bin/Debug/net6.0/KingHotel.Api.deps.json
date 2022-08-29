@@ -544,6 +544,7 @@
         "dependencies": {
           "FluentValidation.AspNetCore": "11.2.1",
           "KingHotel.Domain": "1.0.0",
+          "KingHotel.Infraestructure": "1.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
         },
@@ -558,7 +559,6 @@
       },
       "KingHotel.Infraestructure/1.0.0": {
         "dependencies": {
-          "KingHotel.Application": "1.0.0",
           "KingHotel.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"

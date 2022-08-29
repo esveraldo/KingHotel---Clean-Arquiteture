@@ -1,11 +1,6 @@
-﻿using KingHotel.Application.Services.Interfaces.AuthService;
+﻿using KingHotel.Domain.IService.Auth;
 using KingHotel.Infraestructure.Services.Auth;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KingHotel.Infraestructure.Extensions
 {

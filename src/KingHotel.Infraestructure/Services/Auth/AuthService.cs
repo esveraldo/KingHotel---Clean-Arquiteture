@@ -1,10 +1,10 @@
-﻿using KingHotel.Application.Services.Interfaces.AuthService;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using KingHotel.Domain.IService.Auth;
 
 namespace KingHotel.Infraestructure.Services.Auth
 {
@@ -38,9 +38,8 @@ namespace KingHotel.Infraestructure.Services.Auth
         {
             var issuer = _configuration["Jwt:Issuer"];
             var audience = _configuration["Jwt:Audience"];
-            var key = _configuration["Jwt:Key"];
 
-            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
             var claims = new List<Claim>
@@ -51,12 +50,13 @@ namespace KingHotel.Infraestructure.Services.Auth
 
             var token = new JwtSecurityToken(
                 issuer: issuer,
-                audience: audience, 
-                expires: DateTime.Now.AddHours(8), 
-                signingCredentials: credentials, 
+                audience: audience,
+                expires: DateTime.Now.AddMinutes(120),
+                signingCredentials: credentials,
                 claims: claims);
 
-            var tokenHandler = new JwtSecurityTokenHandler();   
+            var tokenHandler = new JwtSecurityTokenHandler();
+
             var stringToken = tokenHandler.WriteToken(token);
 
             return stringToken;

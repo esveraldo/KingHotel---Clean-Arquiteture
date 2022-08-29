@@ -2,7 +2,6 @@ C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Tests\bin\Debug\net6.0\KingHotel.Tes
 C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Tests\bin\Debug\net6.0\KingHotel.Tests.dll
 C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Tests\bin\Debug\net6.0\ref\KingHotel.Tests.dll
 C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Tests\bin\Debug\net6.0\KingHotel.Tests.pdb
-C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Tests\obj\Debug\net6.0\KingHotel.Tests.csproj.AssemblyReference.cache
 C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Tests\obj\Debug\net6.0\KingHotel.Tests.GeneratedMSBuildEditorConfig.editorconfig
 C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Tests\obj\Debug\net6.0\KingHotel.Tests.AssemblyInfoInputs.cache
 C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Tests\obj\Debug\net6.0\KingHotel.Tests.AssemblyInfo.cs

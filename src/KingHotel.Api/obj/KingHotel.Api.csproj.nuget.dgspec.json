@@ -124,6 +124,9 @@
             "projectReferences": {
               "C:\\ProjetosDeEstudo\\KingHotel\\src\\KingHotel.Domain\\KingHotel.Domain.csproj": {
                 "projectPath": "C:\\ProjetosDeEstudo\\KingHotel\\src\\KingHotel.Domain\\KingHotel.Domain.csproj"
+              },
+              "C:\\ProjetosDeEstudo\\KingHotel\\src\\KingHotel.Infraestructure\\KingHotel.Infraestructure.csproj": {
+                "projectPath": "C:\\ProjetosDeEstudo\\KingHotel\\src\\KingHotel.Infraestructure\\KingHotel.Infraestructure.csproj"
               }
             }
           }
@@ -262,9 +265,6 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\ProjetosDeEstudo\\KingHotel\\src\\KingHotel.Application\\KingHotel.Application.csproj": {
-                "projectPath": "C:\\ProjetosDeEstudo\\KingHotel\\src\\KingHotel.Application\\KingHotel.Application.csproj"
-              },
               "C:\\ProjetosDeEstudo\\KingHotel\\src\\KingHotel.Domain\\KingHotel.Domain.csproj": {
                 "projectPath": "C:\\ProjetosDeEstudo\\KingHotel\\src\\KingHotel.Domain\\KingHotel.Domain.csproj"
               }

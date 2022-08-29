@@ -1,6 +1,6 @@
-﻿using KingHotel.Application.Services.Interfaces.AuthService;
-using KingHotel.Domain.Enums;
+﻿using KingHotel.Domain.Enums;
 using KingHotel.Domain.IRepository;
+using KingHotel.Domain.IService.Auth;
 using KingHotel.Domain.VOs;
 using MediatR;
 

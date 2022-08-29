@@ -3,9 +3,7 @@ C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Infraestructure\bin\Debug\net6.0\Kin
 C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Infraestructure\bin\Debug\net6.0\KingHotel.Infraestructure.dll
 C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Infraestructure\bin\Debug\net6.0\ref\KingHotel.Infraestructure.dll
 C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Infraestructure\bin\Debug\net6.0\KingHotel.Infraestructure.pdb
-C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Infraestructure\bin\Debug\net6.0\KingHotel.Application.dll
 C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Infraestructure\bin\Debug\net6.0\KingHotel.Domain.dll
-C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Infraestructure\bin\Debug\net6.0\KingHotel.Application.pdb
 C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Infraestructure\bin\Debug\net6.0\KingHotel.Domain.pdb
 C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Infraestructure\obj\Debug\net6.0\KingHotel.Infraestructure.csproj.AssemblyReference.cache
 C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Infraestructure\obj\Debug\net6.0\KingHotel.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig

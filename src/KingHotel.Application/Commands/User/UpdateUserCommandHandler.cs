@@ -1,5 +1,5 @@
-﻿using KingHotel.Application.Services.Interfaces.AuthService;
-using KingHotel.Domain.IRepository;
+﻿using KingHotel.Domain.IRepository;
+using KingHotel.Domain.IService.Auth;
 using MediatR;
 
 namespace KingHotel.Application.Commands.User

@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\KingHotel.Domain\KingHotel.Domain.csproj" />
+    <ProjectReference Include="..\KingHotel.Infraestructure\KingHotel.Infraestructure.csproj" />
   </ItemGroup>
 
 </Project>
