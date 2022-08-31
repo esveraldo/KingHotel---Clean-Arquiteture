@@ -40,6 +40,7 @@ namespace KingHotel.Tests.Application.Commands
 
             //Assert
             Assert.NotNull(id);
+            Assert.False(id == Guid.Empty);
             userRepository.Verify(u => u.Create(It.IsAny<User>()), Times.Once);
         }
     }
