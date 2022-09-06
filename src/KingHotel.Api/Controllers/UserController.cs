@@ -33,7 +33,7 @@ namespace KingHotel.Api.Controllers
             catch (Exception e)
             {
 
-                return BadRequest(new { Message=$"Houve um erro, contate o administrador do sistema. {e}" });
+                return BadRequest(new { Message = $"Houve um erro, contate o administrador do sistema. {e}" });
             }
         }
 
@@ -78,8 +78,8 @@ namespace KingHotel.Api.Controllers
             try
             {
                 var id = await _mediator.Send(updateUserCommand);
-                if(updateUserCommand == null)
-                    return BadRequest(new { Message="Houve um erro, entre em contato com o administrador do sistema." });
+                if (updateUserCommand == null)
+                    return BadRequest(new { Message = "Houve um erro, entre em contato com o administrador do sistema." });
                 return Ok(id);
             }
             catch (Exception e)
@@ -115,14 +115,38 @@ namespace KingHotel.Api.Controllers
             try
             {
                 var loginUserViewModel = await _mediator.Send(command);
-                if(loginUserViewModel == null)
-                    return NotFound(new { Message="Usuário ou senha incorretos." });
+                if (loginUserViewModel == null)
+                    return NotFound(new { Message = "Usuário ou senha incorretos." });
                 return Ok(loginUserViewModel);
             }
             catch (Exception e)
             {
 
-                return BadRequest(new { Message=$"Erro ao tentar logar: {e}" });
+                return BadRequest(new { Message = $"Erro ao tentar logar: {e}" });
+            }
+        }
+
+        [HttpPut("{id}/finish")]
+        [AllowAnonymous]
+        public async Task<IActionResult> Finish(Guid id, [FromBody] PaymentUserCommand command)
+        {
+            try
+            {
+                command.Id = id;
+
+                var result = await _mediator.Send(command);
+
+                if (!result)
+                {
+                    return BadRequest("O pagamento não pôde ser processado.");
+                }
+
+                return Accepted();
+            }
+            catch (Exception e)
+            {
+
+                return BadRequest(new { Message = $"Erro ao tentar pagar: {e}" });
             }
         }
     }

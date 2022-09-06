@@ -58,6 +58,10 @@ namespace KingHotel.Infraestructure.Data.Mapping
             builder.Property<int>(x => (int)x.Document)
                 .HasColumnType("int")
                 .IsRequired();
+
+            builder.Property<int>(x => (int)x.Status)
+                .HasColumnType("int")
+                .IsRequired();
         }
     }
 }

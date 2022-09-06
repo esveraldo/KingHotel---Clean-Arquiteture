@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace KingHotel.Infraestructure.Migrations
+namespace KingHotel.Application.Migrations
 {
     public partial class Initial : Migration
     {
@@ -20,11 +20,14 @@ namespace KingHotel.Infraestructure.Migrations
                     Role = table.Column<string>(type: "varchar(50)", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    StartedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    FinishedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
                     Address_Number = table.Column<string>(type: "varchar(10)", nullable: false, defaultValue: "Not informed"),
                     Address_Street = table.Column<string>(type: "varchar(100)", nullable: false, defaultValue: "Not informed"),
                     Address_City = table.Column<string>(type: "varchar(30)", nullable: false, defaultValue: "Not informed"),
                     Address_ZipCode = table.Column<string>(type: "varchar(10)", nullable: false, defaultValue: "Not informed"),
-                    Document = table.Column<int>(type: "int", nullable: false)
+                    Document = table.Column<int>(type: "int", nullable: false),
+                    Status = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

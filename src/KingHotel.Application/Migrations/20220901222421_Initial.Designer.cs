@@ -4,16 +4,18 @@ using KingHotel.Infraestructure.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace KingHotel.Infraestructure.Migrations
+namespace KingHotel.Application.Migrations
 {
     [DbContext(typeof(KingHotelContext))]
-    partial class KingHotelContextModelSnapshot : ModelSnapshot
+    [Migration("20220901222421_Initial")]
+    partial class Initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -39,6 +41,9 @@ namespace KingHotel.Infraestructure.Migrations
                         .HasColumnType("varchar(150)")
                         .HasColumnName("Email");
 
+                    b.Property<DateTime?>("FinishedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("varchar(150)")
@@ -53,6 +58,12 @@ namespace KingHotel.Infraestructure.Migrations
                         .IsRequired()
                         .HasColumnType("varchar(50)")
                         .HasColumnName("Role");
+
+                    b.Property<DateTime?>("StartedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");

@@ -22,7 +22,7 @@ namespace KingHotel.Application.Commands.User
                 return Guid.Empty;
 
             var passwordHash = _authService.ComputedSha256Hash(request.Password);
-            updateUser.UpdateUser(request.Name, request.Email, passwordHash, request.Role, request.Number, request.Street, request.City, request.ZipCode, request.Document);
+            updateUser.UpdateUser(request.Name, request.Email, passwordHash, request.Role, request.Number, request.Street, request.City, request.ZipCode, request.Document, request.Status);
             //await _userRepository.Update(updateUser);
             await _userRepository.SaveChanges();
 

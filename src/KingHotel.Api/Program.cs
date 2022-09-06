@@ -23,6 +23,12 @@ builder.Services.AddRepository();
 builder.Services.AddServices();
 builder.Services.AddSecurity(builder.Configuration);
 builder.Services.AddContext(builder.Configuration);
+builder.Services.AddHttpClient();
+builder.Services.AddCors(p => p.AddPolicy("KingHotel", builder =>
+{
+    builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+}));
+
 
 builder.Services.AddMediatR(typeof(GetAllUsersQueryHandler));
 
@@ -35,7 +41,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors("KingHotel");
 app.UseHttpsRedirection();
+app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();

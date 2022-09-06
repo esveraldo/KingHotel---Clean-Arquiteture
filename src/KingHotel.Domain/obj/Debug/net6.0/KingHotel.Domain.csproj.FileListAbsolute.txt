@@ -9,3 +9,4 @@ C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Domain\obj\Debug\net6.0\KingHotel.Do
 C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Domain\obj\Debug\net6.0\KingHotel.Domain.dll
 C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Domain\obj\Debug\net6.0\ref\KingHotel.Domain.dll
 C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Domain\obj\Debug\net6.0\KingHotel.Domain.pdb
+C:\ProjetosDeEstudo\KingHotel\src\KingHotel.Domain\obj\Debug\net6.0\KingHotel.Domain.csproj.AssemblyReference.cache

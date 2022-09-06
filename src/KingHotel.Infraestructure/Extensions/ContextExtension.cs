@@ -14,7 +14,8 @@ namespace KingHotel.Infraestructure.Extensions
     {
         public static void AddContext(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<KingHotelContext>(Options => Options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<KingHotelContext>(Options => 
+            Options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("KingHotel.Application")));
         }
     }
 }

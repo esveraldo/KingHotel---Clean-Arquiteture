@@ -12,7 +12,7 @@ namespace KingHotel.Tests.Domain.Entities
             var address = new Address("127", "Boiaca", "Rio de Janeiro", "21331-600");
             var user = new User("Esveraldo", "esveraldo@email.com", "Testando@@1", "operator", address, 0);
 
-            user.UpdateUser("Esveraldo", "esveraldo@teste.com", "Testando@@1", "operator", "127", "Boiaca", "Rio de Janeiro", "21331-600", 0);
+            user.UpdateUser("Esveraldo", "esveraldo@teste.com", "Testando@@1", "operator", "127", "Boiaca", "Rio de Janeiro", "21331-600", 0, 0);
             user.UpdatedAtMethod();
 
             Assert.NotNull(user);

@@ -13,5 +13,6 @@ namespace KingHotel.Application.Commands.User
         public string? City { get; set; }
         public string? ZipCode { get; set; }
         public int Document { get; set; }
+        public int Status { get; set; }
     }
 }
