@@ -45,7 +45,12 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Arquivos Diversos",
       "ColorIndex": -1
+    },
+    "d8d6c8b0-d13b-40ea-87f8-1288d9a41772": {
+      "ProjectGuid": "d8d6c8b0-d13b-40ea-87f8-1288d9a41772",
+      "DisplayName": "KingHotel.Tests",
+      "ColorIndex": 8
     }
   },
-  "NextColorIndex": 8
+  "NextColorIndex": 9
 }
